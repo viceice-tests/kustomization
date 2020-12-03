@@ -5,4 +5,4 @@ resources:
 
 images:
 - name: renovate/renovate
-  newTag: 19-slim
+  newTag: 23-slim
