@@ -4,5 +4,11 @@ resources:
 - deployment.yaml
 
 images:
-- name: renovate/renovate
-  newTag: 19-slim
+  - name: renovate/renovate
+    newTag: 19-slim
+
+  - name: alpine
+    digest: sha256:074d3636ebda6dd446d0d00304c4454f468237fdacf08fb0eeac90bdbfa1bac7
+  - name: alpine
+    newTag: 3.12.2
+    digest: sha256:074d3636ebda6dd446d0d00304c4454f468237fdacf08fb0eeac90bdbfa1bac7
