@@ -13,3 +13,16 @@ images:
   - name: alpine
     newTag: 3.12.2
     digest: sha256:25f5332d060da2c7ea2c8a85d2eac623bd0b5f97d508b165f846c7d172897438
+
+  - name: postgres
+    newTag: 11@sha256:b0cfe264cb1143c7c660ddfd5c482464997d62d6bc9f97f8fdf3deefce881a8c
+
+  - name: busybox:1.30.0
+    digest: sha256:e1488cb900233d035575f0a7787448cb1fa93bed0ccc0d4efc1963d7d72a8f17
+    newTag: 1.32.1
+
+  - name: busybox
+    newName: amd64/busybox:1.30.1
+
+  - name: busybox:1.0.0@sha256:e1488cb900233d035575f0a7787448cb1fa93bed0ccc0d4efc1963d7d72a8f17
+    newName: amd64/busybox:1.1.1@sha256:53071b97a88426d4db86d0e8436ac5c869124d2c414caf4c9e4a4e48769c7f37

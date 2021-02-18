@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: mypostgresdb
+        image: postgres:8
+      - name: renovate
+        image: renovate/renovate
+      - name: mariadb
+        image: mariadb:1.7.9
+      - name: myapp
+        image: busybox:1.30.0
+      - name: alpine-app
+        image: alpine:3.7
+      - name: busybox-latest
+        image: busybox
+      - name: busybox-digest
+        image: busybox:1.0.0@sha256:e1488cb900233d035575f0a7787448cb1fa93bed0ccc0d4efc1963d7d72a8f17
